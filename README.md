@@ -3,13 +3,13 @@
 This directory contains a voice-enabled sleep coaching agent. The agent accepts spoken input (from an audio file), uses speech-to-text to understand it, then generates a personalized sleep coaching response using the user's data, and finally speaks the response aloud.
 
 ## How It Works
-**Speech-to-Text (STT)**:
+1. **Speech-to-Text (STT)**:
 The stt.py module uses OpenAI's Whisper model to transcribe audio input into text.
-**Data Context**:
+2. **Data Context**:
 The SleepCoach (in coach.py) loads your sleep diary and wearable metrics. When you ask something, it prepares a context string with your latest sleep data (e.g., last night's stats) to personalize the response.
-**LLM Response**:
+3. **LLM Response**:
 The coach formulates a prompt with an instructional system message (defining its role and style), adds the context and your question, and calls OpenAI's GPT-3.5 to generate a helpful answer. If the API call fails, it can fall back to a simple predefined response or an example from coaching_dialogues.json.
-**Text-to-Speech (TTS)**:
+4. **Text-to-Speech (TTS)**:
 Finally, tts.py uses pyttsx3 to convert the assistant's text reply into spoken words.
 
 
