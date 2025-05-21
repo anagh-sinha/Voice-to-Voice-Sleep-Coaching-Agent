@@ -28,7 +28,7 @@ Voice-to-Voice-Sleep-Coaching-Agent/
 ```
 
 ## Setup and Installation
-1. **Install Dependencies**: In the `Task2` folder, run:  
+1. **Install Dependencies**: In the `Voice-to-Voice-Sleep-Coaching-Agent` folder, run:  
    ```bash
    pip install -r requirements.txt
 
