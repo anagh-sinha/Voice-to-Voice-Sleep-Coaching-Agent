@@ -1,7 +1,4 @@
 
-### File: `stt.py`
-
-```python
 import openai
 
 def transcribe_audio(audio_path):
