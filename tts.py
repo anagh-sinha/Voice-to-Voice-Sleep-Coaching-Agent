@@ -10,6 +10,7 @@ def speak_text(text):
         # Optionally, change voice if multiple voices are available:
         # voices = engine.getProperty('voices')
         # engine.setProperty('voice', voices[1].id)  # e.g., use female voice if index 1 exists
+        
         engine.say(text)
         engine.runAndWait()
     except Exception as e:
