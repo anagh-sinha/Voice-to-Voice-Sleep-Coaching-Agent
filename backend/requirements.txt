@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-dotenv
+openai
+langchain
+elevenlabs
+firebase-admin
+google-auth
+aiofiles
+websockets 

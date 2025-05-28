@@ -1,0 +1,14 @@
+{
+    "type": "service_account",
+    "project_id": "voice-to-voice-ai-agent",
+    "private_key_id": "6b3680fc39592d4acd2667e3307a8864ee686757",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDCUj5mYerH3fmy\nX9t+nQJRPZJO3/mMz6TbUoqjj8QNtxWgqfKIZa6PvzcbZDXpf00MGvaS3EKBu8cL\nydJS0TyMlS5//RPjEjKr60qUhwhOVId54yWNMOnjJDKH87ZYilvy6JnQiKngoG54\nws9/nJvLE3BBu/KUhAOYNAH3eLY5Y0PmI4l3cXzzPQUn/WaFRzMO8ITLz4VJ1sfr\n1w3KvrIudezdc3xo4eYj0IrPDX62tSgquMJM3k0O6ZM6u1C1lKd+LY/IEv3nlo+S\nUpLZ1EHjwMlLTxahPnaaw0M1hBZtF6gsV3xgeil5DJNHmqlhwGd0e2Nv2bUDqM92\n3qruDMk9AgMBAAECggEAANNlpXy8CS5lzb6/iYm0RVEcKo6kGleVjUMMCMbnH+HL\nyzt9ptu7wque2dRysDPUyXzh2FzsQW3hWij45lYySiymHnAeYgQlR/q/feMXA3Iz\ngy6WbcOr8sWoG1DLURQBcQZRBQRXqHc2EPhO9m1dch76hqT8Umo/M6ng6kLOj27d\nJKU0RCFTBiKsTXUh4DLYXXZ+z1MqbRFyfaXmKs8MN13qPkC1y3zKK6ZpxrwdqhFf\nrsrFRhgBUIG5/EgSrHE5MI3damh0m1WkufnjdG4J58tFXNxkFwoomvHzTFJGHQ2H\ngIlWL+2ZOQBAinGnLYgEHMjruy9hi5AwrA8SZCL40QKBgQD/1iAFN1NWN+STNwbT\nfO3GehXxJmXNV9BzdBbh9DaCm/z7o4ugNzFM0VbENrA+HZmK81tSCAwhfn00YQHH\ncm1v2zn0+Vy3NhSOcgESETK1k/nPwApTYpA1l8PlwNPjP5R8XfhV15OVGBNqL55R\nhxXlNoz/MuXbo+Se5wrCFdukqQKBgQDCcgzKQ0B64GRzqN1zBAKAD7JXJL75dDWd\ndRggKCTjWzL7LusImBqfWjZIEVbpGq51FASsmg0VfgBe19UnWjpmQtgOYIZ2r3B7\nuxl+pxX6xUYkKoSxYk0k4WUsfOUdRqjO58xUtiORh5pxh/N/q5urVGvZVwv/HOhI\nO37ttWNIdQKBgBFKGj3gAEzKWDMuu9JdFgCczZDPhH+9GIRE6yr4AxsOialD4zK/\nqCBF4XQ/Mefwviiqy5genRtCXhnFGIavEABIM4F/vKlRCVCbGcFr0h59UpucodYC\nyjYk/IMxZeBsso85FohOmlWwG9fIQg3GcE9eQWcZvHj8eX3XpV16dq6JAoGBAJ5h\nEUPqdWngvlFq+T2GxZaTsnrCpn8/hbBEQStoJ2u8zBDGjZCJfB3R+CbJYNYr8m/Q\np2IDdKbN4/VcrfUIzEqhJaTIQJ4JloBhzIlaBVAmQVSSAVUOsbFZmfQbou8ur68g\nJVHWrbALGORijRavq/NopxP3kADzBcxYEbIDLeRFAoGAYQ3lrH3rCF/UDutyELpa\nH5y76fQ1tWBdepKijU4YB7rdk7cvRugKcm6uzfYcFnqhobiQ7JfJ1hwpuJ6vERHD\nb/F0oGGMOZ8N++PkPkhDbgJ2S+MAb+FCguh7FSeD+GOrKTahmjPftI1RWIvPTZ4G\n7BEQwDUeLEzaNg9t7MtWN8w=\n-----END PRIVATE KEY-----\n",
+    "client_email": "firebase-adminsdk-fbsvc@voice-to-voice-ai-agent.iam.gserviceaccount.com",
+    "client_id": "111601469199877410124",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40voice-to-voice-ai-agent.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+  
