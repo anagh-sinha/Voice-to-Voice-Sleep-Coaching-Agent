@@ -34,8 +34,27 @@ Voice-to-Voice-Sleep-Coaching-Agent/
 
 This installs the OpenAI client and pyttsx3 for voice output.
 
-2. **Environment Setup**: Make sure to set your OpenAI API key in the environment (using OPENAI_API_KEY). This is required for speech recognition (Whisper) and generating responses.
-3. **TTS Additional Setup**:
+2. **Environment Setup**: Create a `.env` file in the backend directory with the following variables:
+   ```
+   # OpenAI API Key for Whisper and GPT
+   OPENAI_API_KEY=your_openai_api_key_here
+
+   # ElevenLabs API Key for Text-to-Speech
+   ELEVENLABS_API_KEY=your_elevenlabs_api_key_here
+
+   # Firebase Configuration
+   FIREBASE_CREDENTIALS_JSON=path_to_your_firebase_credentials.json
+   ```
+
+   Make sure to replace the placeholder values with your actual API keys and credentials. Never commit the `.env` file to version control.
+
+3. **Firebase Setup**: 
+   - Create a new Firebase project
+   - Download your Firebase service account credentials JSON file
+   - Place it in a secure location and update the `FIREBASE_CREDENTIALS_JSON` path in your `.env` file
+   - Never commit the Firebase credentials file to version control
+
+4. **TTS Additional Setup**:
 On Linux, install espeak and ffmpeg if not already present (e.g., sudo apt-get install espeak ffmpeg) for pyttsx3 and audio processing.
 On Windows and Mac, pyttsx3 should use the built-in TTS engines by default.
 
@@ -44,7 +63,7 @@ Start the voice coaching program by running:
 ```bash
 python voice_app.py
 ```
-You'll be prompted to enter the path to an audio file. For example, record yourself asking "I had trouble sleeping last night, what should I do?" and save it as question.wav. Then at the prompt, enter the path to that file (e.g., C:\path\to\question.wav or ./question.wav). The agent will:
+You'll be prompted to enter the path to an audio file. For example, record yourself asking "I had trouble sleeping last night, what should I do?" and save it as question.wav. Then at the prompt, enter the path to that file (e.g., C:\\path\\to\\question.wav or ./question.wav). The agent will:
 Transcribe your question (displaying it as text for confirmation).
 Use your latest diary entry and sleep metrics in crafting a response.
 
@@ -57,10 +76,29 @@ Type 'q' or 'quit' to exit.
 
 Enter path to a recorded audio file (or 'q' to quit): ./question.wav
 User (transcribed): I had trouble sleeping last night, what should I do?
-Coach (text): I’m sorry you had a rough night. According to your diary, you've been struggling. One thing you can try is avoiding screens for an hour before bed and maybe do some light reading. Also, last night you only got 6.8 hours of sleep with a score of 76 – let's aim to improve that by establishing a calming bedtime routine.
+Coach (text): I'm sorry you had a rough night. According to your diary, you've been struggling. One thing you can try is avoiding screens for an hour before bed and maybe do some light reading. Also, last night you only got 6.8 hours of sleep with a score of 76 – let's aim to improve that by establishing a calming bedtime routine.
 ```
 The agent's spoken response will play through your speakers. You can then record another question as a new audio file and provide its path to continue the dialogue. (Note: The agent, as implemented, uses the latest data each turn but does not carry over conversation context between turns, aside from what's in the diary/metrics.) 
 
 Type 'q' to quit the program at any time.
+
+## Security Notes
+
+1. Never commit sensitive information to version control:
+   - API keys
+   - Firebase credentials
+   - Environment files (.env)
+   - Private keys
+   - Service account credentials
+
+2. Always use environment variables for sensitive configuration:
+   - Store API keys in environment variables
+   - Use .env files for local development (and add them to .gitignore)
+   - Use secure secret management in production
+
+3. Keep your Firebase credentials secure:
+   - Store them in a secure location
+   - Use environment variables to reference them
+   - Never expose them in client-side code
 
 
